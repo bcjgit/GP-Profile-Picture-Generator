@@ -4,7 +4,6 @@ import scipy.linalg as linalg
 import scipy.sparse as sparse
 import matplotlib.pyplot as plot
 from scipy.sparse.linalg import spsolve
-import scipy.misc as misc
 import argparse
 
 
@@ -19,7 +18,7 @@ def draw_gp(n=100):
     w = np.random.normal(size=(n**2,1))
     x = spsolve(L,w, use_umfpack=True)
 
-    # Reshape and plot result
+    # Reshape result
     x = np.reshape(x,(n,n))
     return x
 
