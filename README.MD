@@ -9,3 +9,8 @@ Python script used to generate my github profile picture. This script computes a
 | --verbose      | Flag indicating if script should plot image      |   No |
 | --save | Flag indicating if script should save image      |    No |
 
+## Example Usage
+'''bash
+python gen_pic.py --dim 400 --verbose 
+'''
+This will draw a 400x400 GP and plot , but not save, the resulting image. 
